@@ -35,3 +35,13 @@ you can run the project by simply change the path of your documents.
 
 # result
 The result is in the folder "{time}_output.txt"
+
+>python solution.py
+
+the result will be in the folder "{time}_output.txt"
+
+
+# What can you do with this project?
+1. you can refine the prompt of the LLM to get better results.
+2. you can alter the model of the LLM to get better results.
+

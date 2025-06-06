@@ -111,6 +111,7 @@ def PILimage2base64(image):
 
 def paper_revision(pdf_path):
     # 设置输出txt路径
+    # 设置名字命名为年月日时分
     today = time.strftime("%Y-%m-%d-%H-%M", time.localtime())
     today = today.replace('-', '_')
     output_txt = f'{today}_output.txt'

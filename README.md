@@ -10,14 +10,20 @@ Personally, I use Aliyun, so I will show you how to get the API KEY from Aliyun.
 Second, you need to install the python environment.
 The following is key package required
 >openAI
+
 >fite (pip install pymupdf)
 
 and there are some basic packages required
 >io
+
 >time
+
 >json
+
 >yaml
+
 >PIL (pip install pillow)
+
 >tqdm
 
 ## convert your documents to pdf

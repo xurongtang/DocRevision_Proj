@@ -109,12 +109,10 @@ def PILimage2base64(image):
     image.save(buffered, format=image_type)
     return base64.b64encode(buffered.getvalue()).decode(),image_type
 
-def paper_revision(pdf_path):
+def paper_revision(pdf_path,OUTPUT_PATH):
     # 设置输出txt路径
     # 设置名字命名为年月日时分
-    today = time.strftime("%Y-%m-%d-%H-%M", time.localtime())
-    today = today.replace('-', '_')
-    output_txt = f'{today}_output.txt'
+    output_txt = OUTPUT_PATH
     image_ls = read_pdf2ImgLs(pdf_path)
     for page,image in enumerate(tqdm(image_ls, desc='Processing pages')):
         base64code,addr_type = PILimage2base64(image)
@@ -128,4 +126,7 @@ def paper_revision(pdf_path):
 
 
 if __name__ == '__main__':
-    paper_revision('paper.pdf')
+    today = time.strftime("%Y-%m-%d-%H-%M", time.localtime())
+    today = today.replace('-', '_')
+    OUTPUT_PATH = f'{today}_output.txt'
+    paper_revision('paper.pdf', OUTPUT_PATH)

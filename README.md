@@ -5,6 +5,7 @@ A simple project about how to use the OCR and LLM to revist documents, such as y
 ## API KEY
 First, you need to get the API KEY from LLM supplier([Aliyun](https://bailian.console.aliyun.com/) or [DeepSeek](https://platform.deepseek.com/usage)).
 Personally, I use Aliyun, so I will show you how to get the API KEY from Aliyun.
+Your apikey should be saved in the file "apikey.yaml"
 
 ## Python Environment
 Second, you need to install the python environment.
